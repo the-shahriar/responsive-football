@@ -145,8 +145,8 @@ hr {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
-  grid-column-gap: 10px;
-  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 15px;
   padding: 42px 123px 70px 180px;
 }
 
@@ -187,7 +187,7 @@ hr {
 .insta-image {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 10px;
+  grid-column-gap: 5px;
   padding: 20px;
 }
 .insta-image img {
@@ -196,7 +196,7 @@ hr {
   cursor: pointer;
 }
 .insta-image img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   opacity: 0.8;
 }
 /*--------  Footer  -------*/
@@ -217,4 +217,182 @@ hr {
 }
 .copyright-text {
   font-size: 18px;
+}
+
+/*----------------------------
+Media Query
+-----------------------------*/
+
+/* For Mobile Device */
+@media only screen and (max-width: 680px) {
+  /* Common CSS for Mobile */
+  .container {
+    padding: 0;
+  }
+  /* Header */
+  .main-header {
+    padding: 0 10px 0 10px;
+  }
+  .header {
+    padding: 16px 0 0 0;
+  }
+
+  /* Nav Menu */
+  .nav-menu {
+    display: none;
+  }
+  .mobile-btn {
+    visibility: visible;
+    font-size: 30px;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 50px;
+  }
+
+  .hero-section .hero-left .title {
+    font-size: 2.5em;
+  }
+  .hero-left a {
+    padding: 15px 40px;
+  }
+  .hero-section .hero-right img {
+    width: 100%;
+  }
+
+  .hero-right {
+    padding: 0 10px 30px 10px;
+  }
+  /* Player section */
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    padding: 60px 15px 0 15px;
+  }
+
+  /* Hight Light Section */
+  .highlight-section {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px;
+    padding: 40px 15px;
+  }
+  .highlight-section .highlight-left .title {
+    font-size: 2em;
+  }
+  .highlight-section .highlight-right img {
+    width: 100%;
+  }
+
+  /* Blog Section */
+  .section-title {
+    font-size: 35px;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 40px;
+    padding: 15px;
+  }
+
+  .blog .blog-image img {
+    width: 100%;
+    height: 185px;
+  }
+  .blog-details {
+    padding: 0 15px;
+  }
+  .blog-details h4 {
+    font-size: 14px;
+  }
+
+  /* Follow section */
+  .insta-image {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 15px;
+  }
+  /* Footer section */
+  .footer .footer-image img {
+    width: 70%;
+  }
+}
+
+/* For Tablet Device */
+@media only screen and (max-width: 992px) and (min-width: 680px) {
+  .container {
+    padding: 0;
+  }
+  .header {
+    padding: 10px 20px 42px 20px;
+    flex-direction: column;
+  }
+
+  /* Nav Menu */
+  .nav-menu {
+    order: 2;
+  }
+  .nav-menu a {
+    margin-right: 13px;
+  }
+  .btn {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px 20px;
+  }
+
+  .hero-section .hero-right img {
+    width: 100%;
+  }
+  /* Player Section */
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 10px;
+  }
+
+  /* Highlight Section */
+  .highlight-section {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px 0px 20px 15px;
+  }
+  .highlight-section .highlight-right {
+    margin-bottom: 30px;
+  }
+  .highlight-section .highlight-right img {
+    width: 100%;
+  }
+
+  /* Blog Section */
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px;
+  }
+  .blog {
+    padding: 30px 15px;
+  }
+
+  /* Follower Section */
+  .insta-image {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Footer Section */
+  .footer .footer-image img {
+    width: 70%;
+  }
+}
+
+/* For Desktop Device */
+@media only screen and (max-width: 1400px) and (min-width: 992px) {
+  .container {
+    padding: 42px 70px 0px 70px;
+  }
+  .header {
+    padding: 42px 70px 25px 70px;
+  }
 }
