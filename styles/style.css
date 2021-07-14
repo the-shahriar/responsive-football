@@ -134,7 +134,7 @@ body {
   text-align: center;
   font-size: 45px;
   color: #e02c6d;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
 }
 hr {
   width: 30%;
@@ -156,10 +156,9 @@ hr {
 }
 .blog-details {
   line-height: 25px;
-  padding-left: 15px;
 }
 .blog-details h4 {
-  margin-top: -5px;
+  margin-top: -10px;
   cursor: pointer;
 }
 .blog-details h4:hover {
@@ -176,7 +175,7 @@ hr {
   background: black;
 }
 .blog .blog-image img {
-  width: 100%;
+  width: 90%;
   height: 165px;
   transition: 0.2s ease-in-out;
 }
@@ -184,13 +183,29 @@ hr {
   transform: scale(1.1);
 }
 
+/* Follow us on instagram */
+.insta-image {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  padding: 20px;
+}
+.insta-image img {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.insta-image img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
 /*--------  Footer  -------*/
 .footer {
   text-align: center;
   margin-top: 80px;
 }
 .footer .footer-image img {
-  width: 40%;
+  width: 30%;
 }
 
 .footer .fab {
