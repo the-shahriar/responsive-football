@@ -129,6 +129,61 @@ body {
 .highlight-section .highlight-right img:hover {
   transform: scale(1.1);
 }
+/*------- Blog section ------------*/
+.section-title {
+  text-align: center;
+  font-size: 45px;
+  color: #e02c6d;
+  letter-spacing: 15px;
+}
+hr {
+  width: 30%;
+  background: #e02c6d;
+}
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  padding: 42px 123px 70px 180px;
+}
+
+.blog {
+  display: flex;
+  align-items: center;
+}
+.blog-details {
+  line-height: 25px;
+  padding-left: 15px;
+}
+.blog-details h4 {
+  margin-top: -5px;
+  cursor: pointer;
+}
+.blog-details h4:hover {
+  color: #e02c6d;
+}
+.blog-details a {
+  background: #e02c6d;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.blog-details a:hover {
+  background: black;
+}
+.blog .blog-image img {
+  width: 100%;
+  height: 165px;
+  transition: 0.2s ease-in-out;
+}
+.blog .blog-image img:hover {
+  transform: scale(1.1);
+}
+
 /*--------  Footer  -------*/
 .footer {
   text-align: center;
