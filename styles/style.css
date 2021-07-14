@@ -361,11 +361,8 @@ Media Query
     grid-template-columns: repeat(1, 1fr);
     padding: 20px 0px 20px 15px;
   }
-  .highlight-section .highlight-right {
+  .highlight-left {
     margin-bottom: 30px;
-  }
-  .highlight-section .highlight-right img {
-    width: 100%;
   }
 
   /* Blog Section */
@@ -380,6 +377,8 @@ Media Query
   /* Follower Section */
   .insta-image {
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
   /* Footer Section */
   .footer .footer-image img {
