@@ -1,0 +1,150 @@
+/*---------- Common CSS ----------*/
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.container {
+  padding: 42px 123px 42px 156px;
+}
+
+/*---------- Nav menu -----------*/
+.main-header {
+  background: #2d25a0;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 42px 123px 42px 156px;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  margin-right: 40px;
+}
+.mobile-btn {
+  visibility: hidden;
+}
+.btn a {
+  background: #e02c6d;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.btn a:hover {
+  background: black;
+}
+.btn .fa-sign-in-alt {
+  padding-right: 8px;
+  text-align: center;
+}
+
+/*---------- hero-section ----------*/
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 102px;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+.hero-section .hero-left .title {
+  font-size: 4em;
+  color: white;
+}
+.hero-left a {
+  background: #e02c6d;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+}
+.hero-left a:hover {
+  background: black;
+}
+.hero-section .hero-right img {
+  width: 96%;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.hero-section .hero-right img:hover {
+  transform: scale(1.1);
+}
+
+/*----------- Player Section ----------*/
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  grid-row-gap: 30px;
+  grid-column-gap: 27px;
+  padding: 60px 180px;
+}
+
+.player {
+  background-color: white;
+  padding: 15px;
+  box-shadow: 10px 10px 40px gainsboro;
+}
+
+.player .player-image img {
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
+.player .player-image:hover img {
+  transform: scale(1.1);
+}
+
+/*----------Hight Light Section --------*/
+.highlight-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 66px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 42px 123px 70px 180px;
+}
+.highlight-section .highlight-left .title {
+  font-size: 3.7em;
+  color: black;
+}
+.highlight-left p {
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+.highlight-left a {
+  background: #e02c6d;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+}
+.highlight-left a:hover {
+  background: black;
+}
+.highlight-section .highlight-right img {
+  width: 95%;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.highlight-section .highlight-right img:hover {
+  transform: scale(1.1);
+}
+/*--------  Footer  -------*/
+.footer {
+  text-align: center;
+  margin-top: 80px;
+}
+.footer .footer-image img {
+  width: 40%;
+}
+
+.footer .fab {
+  color: #969bab;
+  background: gainsboro;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+.copyright-text {
+  font-size: 18px;
+}
